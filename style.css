@@ -53,3 +53,36 @@ body {
     background-color: #6759ff;
     color: #ffffff;
 }
+
+/* Contenedor de productos */
+#productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste dinámico */
+    gap: 20px; /* Espaciado uniforme */
+    padding: 2em 0;
+}
+
+/* Cada tarjeta de producto */
+#productos img {
+    display: block;
+    width: 100%; /* Asegura que ocupe el ancho del contenedor */
+    height: 250px; /* Altura consistente para todas las imágenes */
+    object-fit: cover; /* Ajuste sin deformar la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+}
+
+/* Efecto hover en imágenes */
+#productos img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+
+/* Ajustar el botón "todos" */
+#botones {
+    margin-top: 1em; /* Añadir separación respecto al input */
+    text-align: left; /* Alinear a la izquierda */
+}
+
